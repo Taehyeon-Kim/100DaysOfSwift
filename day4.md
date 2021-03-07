@@ -181,7 +181,7 @@ while countDown >= 0 {
 
 <br>
 
-### 3. outerLoop 키워드 (중첩 루프 탈출)
+### 3. 중첩 루프 탈출
 
 ```
 루프 내부에 또 다른 루프를 넣으면 중첩 루프라고 합니다.
@@ -189,19 +189,20 @@ while countDown >= 0 {
 한 번 동시에 루프를 나가는 방법에 대해서 알아보도록 합시다.
 ```
 
-`outerLoop`라는 키워드를 이용해서 레이블을 달아주어야 하는데요.  
+중첩 루프를 탈출하기 위해서는 레이블을 달아주어야 하는데요.  
+(레이블 이름은 자유롭게 작성해주시면 됩니다 👍!!)  
 예시를 한 번 보도록 할게요
 
 ```swift
-// 자 외부 루프에 outerLoop를 이용해서 마킹해두고!
-outerLoop: for i in 1...10 {
+// 자 외부 루프에 myLoop라고 레이블을 달아주고
+myLoop: for i in 1...10 {
     for j in 1...10 {
         let product = i * j
         print ("\(i) * \(j) is \(product)")
 
         if product == 50 {
             print("It's a bullseye!") // bullseye가 정중앙을 의미한다고 하네요 ..ㅎ
-            break outerLoop           // break + outerLoop를 해주면 외부 루프를 탈출하게 됩니다.
+            break myLoop           // break + 레이블 이름 해주면 외부 루프를 탈출하게 됩니다.
         }
     }
 }
