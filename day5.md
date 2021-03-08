@@ -10,9 +10,9 @@ Functions
 `Parameter labels` · `매개변수 레이블`  
 `Omitting parameter labels` · `매개변수 생략`  
 `Default parameters` · `매개변수 기본값`  
-`Variadic functions`· `가변 함수`
-`Writing throwing functions`· `throwing 함수 작성`
-`Running throwing functions`· `throwing 함수 실행`
+`Variadic functions`· `가변 함수`  
+`Writing throwing functions`· `throwing 함수 작성`  
+`Running throwing functions`· `throwing 함수 실행`  
 `inout parameters`· `inout 매개변수`
 
 <br>
