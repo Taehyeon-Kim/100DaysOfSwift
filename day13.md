@@ -2,6 +2,8 @@
 
 Swift review, day one
 
+변수, 컬렉션, 조건문, 반복문
+
 ## 주제
 
 1. Variables and constants  
