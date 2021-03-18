@@ -36,4 +36,5 @@
 | 😩 Day 10 | 클래스 생성 <br> 클래스 상속 <br> 메서드 오버라이딩 <br> Final 클래스 <br> 객체 복사 <br> deinit(소멸자) <br> 가변성                                                        | [day10.md](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day10.md) | ✅       | 오늘부터 쉽지 않다.. 다른 할 것들이 너무 많네 ㅠㅠ        |
 | 🙃 Day 11 | 프로토콜 <br> 프로토콜 상속 <br> 확장 <br> 프로토콜 확장 <br> 프로토콜 지향 프로그래밍                                                        | [day11.md](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day11.md) | ✅       | 하하하..      |
 | 🙄 Day 12 | 옵셔널 <br> 옵셔널 언래핑 <br> 타입캐스팅| [day12.md](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day12.md) | ✅       | 하하하..      |
-| 🙄 Day 13 | 스위프트 문법 복습(1) [day13.md](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day13.md) | ✅       | 하하하..      |
+| 🙄 Day 13 | 스위프트 문법 복습(1)| [day13.md](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day13.md) | ✅       | -      |
+| 🥺 Day 14 | 스위프트 문법 복습(2)| [day14.md](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day14.md) | ✅       | 하루 쉬었다 다시 시작합니다! |
