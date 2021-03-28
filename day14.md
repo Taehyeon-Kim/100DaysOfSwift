@@ -8,7 +8,7 @@
 
 2. 옵셔널 (Optionals)
 
-3. 옵셔널 체이닝 (Op₩₩tional chaining)
+3. 옵셔널 체이닝 (Optional chaining)
 
 4. 열거형 (Enumerations)
 
