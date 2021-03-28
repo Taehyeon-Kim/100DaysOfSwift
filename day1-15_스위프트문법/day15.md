@@ -208,5 +208,5 @@ for album in allAlbums {
 지난 글에 자세히 정리해놨기 때문에 넘어가도록 하겠습니다~  
 나중에 보았을때는 정복한 상태이길🔥
 
-- [클로저(1)](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day6.md)
-- [클로저(2)](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day7.md)
+- [클로저(1)](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day1-15_%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8%EB%AC%B8%EB%B2%95/day6.md)
+- [클로저(2)](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day1-15_%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8%EB%AC%B8%EB%B2%95/day7.md)
