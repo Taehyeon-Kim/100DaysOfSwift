@@ -39,3 +39,25 @@
 | 🙄 Day 13 | 스위프트 문법 복습(1)                                                                                                                                                       | [day13.md](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day1-15_%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8%EB%AC%B8%EB%B2%95/day13.md) | ✅       | -                                                         |
 | 🥺 Day 14 | 스위프트 문법 복습(2)                                                                                                                                                       | [day14.md](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day1-15_%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8%EB%AC%B8%EB%B2%95/day14.md) | ✅       | 하루 쉬었다 다시 시작합니다!                              |
 | 🥺 Day 15 | 스위프트 문법 복습(3)                                                                                                                                                       | [day15.md](https://github.com/Taehyeon-Kim/100DaysOfSwift/blob/master/day1-15_%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8%EB%AC%B8%EB%B2%95/day15.md) | ✅       | 오래 쉬어버렸네요.. 다시 힘내봅시다!                      |
+
+<br>
+
+### Days 16-22: Starting iOS
+
+문법에 대한 학습을 마쳤으니, 가볍게 프로젝트를 생성하고 앱을 만들어보는 단계
+
+→ 3가지의 프로젝트 진행
+
+- Project 1
+- Project 2
+- Project 3
+
+<br>
+
+<pre>Project 1 진행</pre>
+
+| 구분      | 키워드                                 | 진행상황 | 코멘트                               | 그룹      |
+| --------- | -------------------------------------- | -------- | ------------------------------------ | --------- |
+| 🤔 Day 16 | FileManager <br> UITableViewController | ✅       | 간단하게 이미지 목록 테이블뷰에 표시 | Project 1 |
+
+![day16](https://user-images.githubusercontent.com/61109660/112806309-99dde780-90b1-11eb-9c4d-33fc26c75f85.gif)
