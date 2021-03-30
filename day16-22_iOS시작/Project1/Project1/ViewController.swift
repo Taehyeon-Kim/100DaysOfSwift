@@ -16,6 +16,11 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 타이틀 설정
+        title = "Storm Viewer"
+        // Large 타이틀 설정
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         // 파일매니저를 사용하기 위한 싱글톤 인스턴스.
         let fm = FileManager.default
         
@@ -33,19 +38,37 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
-        
-        print(pictures)
     }
     
     // MARK: - Table View Methods
+    
+    // 행 수 설정하기
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count
     }
     
+    // 셀 가져오기
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
         cell.textLabel?.text = pictures[indexPath.row]
         return cell
+    }
+    
+    // 셀 클릭 시
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // UIViewController는 기본적으로 storyboard와 navigationController라는 프로퍼티를 가진다.
+        
+        // DetailViewController가 정상적으로 불러와졌다면
+        if let vc = storyboard?.instantiateViewController(identifier: "Detail") as? DetailViewController {
+            
+            // 행에 맞는 이미지이름을 넘겨준다.
+            vc.selectedImage = pictures[indexPath.row]
+            
+            // 네비게이션 컨트롤러에 push한다.
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        
     }
 }
 
