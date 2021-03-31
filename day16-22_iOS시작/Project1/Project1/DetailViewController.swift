@@ -18,7 +18,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         // 둘다 optional이기 때문에 따로 처리안해도 됨 - 그냥 대입
-        title = selectedImage
+         title = selectedImage
         // Large 타이틀 모드 없애기
         navigationItem.largeTitleDisplayMode = .never
         // 네비게이션 아이템 색상 변경 (tint color)

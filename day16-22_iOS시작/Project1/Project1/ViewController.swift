@@ -38,6 +38,8 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
+        // 이름 순대로 정렬하기 (Challenge 2 - 테이블뷰 정렬하기)
+        // pictures.sort()
     }
     
     // MARK: - Table View Methods
@@ -63,6 +65,9 @@ class ViewController: UITableViewController {
             
             // 행에 맞는 이미지이름을 넘겨준다.
             vc.selectedImage = pictures[indexPath.row]
+            
+            // 세부 제목 표시줄에 다음과 같이 나타내려고 → ex. Picture 2 of 10
+            // vc.title = "Picture \(indexPath.row + 1) of \(pictures.count)"
             
             // 네비게이션 컨트롤러에 push한다.
             navigationController?.pushViewController(vc, animated: true)
