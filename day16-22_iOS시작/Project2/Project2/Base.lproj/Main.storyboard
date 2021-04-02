@@ -17,28 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xaf-19-cDd">
-                                <rect key="frame" x="107" y="230" width="200" height="100"/>
-                                <state key="normal" image="us"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzP-WP-gs5">
-                                <rect key="frame" x="107" y="360" width="200" height="100"/>
-                                <state key="normal" image="us"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8K-3I-b5I">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
-                                <state key="normal" image="us"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Tu1-Hk-Bba">
+                                <rect key="frame" x="107" y="268" width="200" height="360"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8K-3I-b5I">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                        <state key="normal" image="us"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JqK-rz-09S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xaf-19-cDd">
+                                        <rect key="frame" x="0.0" y="130" width="200" height="100"/>
+                                        <state key="normal" image="us"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6a-yD-5Dy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzP-WP-gs5">
+                                        <rect key="frame" x="0.0" y="260" width="200" height="100"/>
+                                        <state key="normal" image="us"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jZM-ot-OTd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKe-FC-M29">
+                                <rect key="frame" x="186" y="168" width="42" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fzP-WP-gs5" firstAttribute="centerX" secondItem="Xaf-19-cDd" secondAttribute="centerX" id="OB8-2P-VFl"/>
-                            <constraint firstItem="Xaf-19-cDd" firstAttribute="top" secondItem="a8K-3I-b5I" secondAttribute="bottom" constant="30" id="a0M-Sk-cNq"/>
-                            <constraint firstItem="a8K-3I-b5I" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ah5-hA-sag"/>
-                            <constraint firstItem="fzP-WP-gs5" firstAttribute="top" secondItem="Xaf-19-cDd" secondAttribute="bottom" constant="30" id="pBR-gH-CaN"/>
-                            <constraint firstItem="Xaf-19-cDd" firstAttribute="centerX" secondItem="a8K-3I-b5I" secondAttribute="centerX" id="vTD-nI-BqB"/>
-                            <constraint firstItem="a8K-3I-b5I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="wRr-uA-pB0"/>
+                            <constraint firstItem="DKe-FC-M29" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="2kb-fU-RHI"/>
+                            <constraint firstItem="Tu1-Hk-Bba" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iel-3B-tVy"/>
+                            <constraint firstItem="Tu1-Hk-Bba" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ptk-0S-eSb"/>
+                            <constraint firstItem="DKe-FC-M29" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UzZ-Bw-tdS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DVc-R3-eEU"/>
@@ -46,6 +64,7 @@
                         <outlet property="button1" destination="a8K-3I-b5I" id="pf7-O6-uiH"/>
                         <outlet property="button2" destination="Xaf-19-cDd" id="yYp-S4-ms6"/>
                         <outlet property="button3" destination="fzP-WP-gs5" id="qtc-Nk-d5A"/>
+                        <outlet property="countryLabel" destination="DKe-FC-M29" id="MnP-4s-1Ng"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
