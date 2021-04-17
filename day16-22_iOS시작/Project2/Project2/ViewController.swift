@@ -18,12 +18,13 @@ class ViewController: UIViewController {
     var countries = [String]()
     var score = 0
     var correctAnswer = 0 // 정답을 저장할 변수
+    var count = 0 // 몇문제 풀었는지 체크할 변수
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "🌍 국기 알아맞추기"
+//        title = "🌍 국기 알아맞추기"
         
         // 배열도 문자열처럼 덧셈기호를 이용해서 원소를 추가할 수 있다.
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
@@ -55,8 +56,9 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
         // 제목에 정답을 표시하는데, 대문자로 표시
-        // title = countries[correctAnswer].uppercased()
-        countryLabel.text = countries[correctAnswer].uppercased()
+        title = "맞출 나라: \(countries[correctAnswer].uppercased()) / 점수: \(score)"
+        
+//        countryLabel.text = countries[correctAnswer].uppercased()
     }
 
     // 3개의 버튼이 모두 동일한 메서드를 호출하고 있는 것이 중요하다.
@@ -65,15 +67,26 @@ class ViewController: UIViewController {
     // 뷰에는 특별한 식별 번호가 있다 → 바로 tag
     @IBAction func buttonTapped(_ sender: UIButton) {
         var title: String
+        var message: String
         
         // 정답이 맞는지 체크
         // 점수 증감
         if sender.tag == correctAnswer {
-            title = "Correct"
+            title = "정답"
+            message = "정답입니다."
             score += 1
         } else {
-            title = "Wrong"
+            title = "오답"
+            message = "틀렸습니다. 그것은 \(countries[sender.tag]) 국기입니다."
             score -= 1
+        }
+        
+        count += 1
+        
+        if count == 10 {
+            title = "최종 점수"
+            message = "당신의 점수는 \(score)점 입니다."
+            count = 0
         }
         
 
@@ -82,7 +95,7 @@ class ViewController: UIViewController {
         // - 클로저 사용: 클로저는 변수처럼 사용할 수 있는 특별한 종류의 코드 블럭
         // - 코드 블록의 복사본을 가져 와서 나중에 호출 가능
         // - AlertController 생성
-        let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         // - AlertAction 연결
         ac.addAction(UIAlertAction(title: "Continue",
                                    style: .default,
